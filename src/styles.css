@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+}
+.products {
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.prod__single {
+  height: 150px;
+  padding: 20px;
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.prod__single > img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  margin-bottom: 1px;
+}
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination > span {
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.page_selected {
+  background-color: rgb(220, 220, 220);
+}
+.disable_pagination {
+  opacity: 0;
+}
